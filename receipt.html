@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src='https://kit.fontawesome.com/8e7fb7d8d3.js' crossorigin='anonymous'></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="nav container">
+        <button class="ham">
+            <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/dehaze-24px.png" alt="">
+        </button>
+        <h1 class="nav-logo">
+            <a href="index.html">SweetTaste</a>
+        </h1>
+        <div class="nav-links">
+            <ul class="nav-links-ul">
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="#">甜點</a></li>
+                <li><a href="#">登入</a></li>
+                <li><a href="#"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/shopping_cart.png?raw=true" alt=""></a></li>
+            </ul>
+            <a href="succeed.html" class="cart"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/shopping_cart.png?raw=true" alt=""></a>
+        </div>
+    </div>
+    <div class="receipt-main">
+        <form action="" class="form">
+            <div class="form-container">
+                <div class="form-info">
+                    <h2 class="form-info-title">發票</h2>
+                    <ul class="form-info-progressBar">
+                        <li class="my-circle"><i class="fas fa-check-circle"></i></li>
+                        <li class="my-circle"><i class="fas fa-check-circle"></i></li>
+                        <li class="my-circle"><i class="far fa-dot-circle"></i></li>
+                    </ul>
+                </div>
+                <div class="form-chooseDeliveryWay">
+                    <a class="switch active">電子發票</a>
+                    <a class="switch">郵寄發票</a>
+                </div>
+                <div class="form-input">
+                    <label for="">電子郵件信箱</label>
+                    <input type="e-mail" class="form-input-mail"value="example@email.com">
+                </div>
+                <div class="form-input">
+                    <label for="">統一編號（選填）</label>
+                    <input type="text" class="form-input-taxID" value="12345678">
+                </div>
+            </div>
+            <button class="form-submit">
+                確認結帳
+            </button>
+        </form>
+        <div class="order">
+            <table class="order-sum">
+                <caption>訂單摘要</caption>
+                <tbody>
+                    <tr>
+                        <td>小計</td>
+                        <td>NT$ 2,700</td>
+                    </tr>
+                    <tr>
+                        <td>運費</td>
+                        <td>NT$ 300</td>
+                    </tr> 
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>總計</td>
+                        <td>NT$ 3,000</td>
+                    </tr>
+                </tfoot>
+            </table>
+            
+           
+
+            <table class="order-list">
+
+                <caption>購物清單</caption>
+
+                <tbody>
+                    <tr>
+                        <td rowspan=2 class="order-item order-1"> 
+                        </td>
+                        <td class="name">焦糖馬卡龍（2）</td>
+                    </tr>
+                    <tr>
+                        <td class="price">NT$ 900</td>
+                    </tr>
+                    <tr class="space"></tr>
+                    <tr>
+                        <td rowspan=2 class="order-item order-2">
+                        </td>
+                        <td class="name">焦糖馬卡龍（2）</td>
+                    </tr>
+                    <tr>
+                        <td class="price">NT$ 900</td>
+                    </tr>
+                    <tr class="space"></tr>
+                    <tr>
+                        <td rowspan=2 class="order-item order-3">
+                        </td>
+                        <td class="name">焦糖馬卡龍（2）</td>
+                    </tr>
+                    <tr>
+                        <td class="price">NT$ 900</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </div>
+    </div>
+    </div>
+   
+    
+    <div class="registered-container">
+        <form action="week3主線任務.html" class="registered registered">
+            <label for="input-text" class="registered-label">
+                <img class="registered-label-logo" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-light.svg" alt="logo">
+                <h2 class="registered-label-h">
+                    訂閱你我的甜蜜郵件
+                </h2>
+            </label>
+            <div class="registered-input">
+                <img class="registered-input-mailIcon" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/mail-24px.png?raw=true" alt="">
+                <input type="email" name="input-text" id="input-text" class="registered-input-text">
+                <button type="button" id="submit" class="registered-input-submit"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/arrow_forward-24px.png?raw=true"></button>
+            </div>
+        </form>
+    </div>
+    <div class="footer ">
+        <div class="footer-container">
+            <div class="footer-left">
+                <img class="footer-left-logo" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logotype-sm-dark.svg" alt="">
+                <div class="footer-left-bottom">
+                    <ul class="footer-left-bottom-contactMethod">
+                        <li>07-1234-5678 </li>
+                        <li>sweetaste@email.com </li>
+                        <li>800 高雄市新興區幸福路 520 號</li>
+                    </ul>
+                    <div class="footer-left-bottom-socialMedia">
+                        <a href="#"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/ic-line%40.svg" alt="line" class="line"></a>
+                        <a href="#"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/ic-facebook.svg" alt="fb" class="fb"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-right">
+                <p class="footer-right-slogan">今天是個｜｜<br>&nbsp;吃甜點的好日子。</p>
+                <p class="footer-right-copywrite">© 2018 Sweetaste* All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('.switch').click(function(){
+            $('.switch').toggleClass('active')
+        })
+    </script>
+    
+</body>
+</html>

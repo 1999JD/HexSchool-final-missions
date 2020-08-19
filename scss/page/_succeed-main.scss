@@ -1,0 +1,70 @@
+.succeed-main{
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&display=swap');
+    font-family: 'Noto Serif SC', serif;
+    background-image: url("../img/pay-success.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 60px;
+    position: relative;
+    margin-top: 30px;
+    .responsive{
+        display: none;
+    }
+    .content{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .progress-bar{
+            margin-top: 130px;
+            display: flex;
+            max-width: 190px;
+            .my-circle{
+                font-size: 20px;
+                position: relative;
+            }
+            .my-circle+.my-circle{
+                margin-left: 63px;
+            }
+            .my-circle+.my-circle::before{
+                content: '';
+                position: absolute;
+                height: 1px;
+                width: 63px;
+                background-color: $deep;
+                top:0;
+                bottom: 0;
+                margin:auto;
+                left:-63px;
+            }
+        }
+        h2{
+            margin-top: 30.2px;
+            margin-bottom: 51.34px;
+            font-size: $font-l;
+        }
+        a{
+            background-color: $button-color;
+            padding:16px 102px;
+            margin-bottom: 116px;
+            font-size: $font-m;
+            line-height: 1.5;
+        }
+
+    }
+    @include pad(){
+        margin-bottom: 0;
+        .responsive{
+            display: block;
+            background-color:$button-color ;
+            font-size: $font-m;
+            padding: 16px 0;
+            text-align: center;
+        }
+        .content a{
+            visibility: hidden;
+            padding: 0;
+        }
+    }
+    
+}
