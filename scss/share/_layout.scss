@@ -1,0 +1,156 @@
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.5;
+}
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+li{
+    list-style: none;
+}
+ul{
+    margin: 0;
+}
+
+.card{
+    background-color: transparent;
+    border:0;
+}
+
+.nav{
+    position: relative;
+    &-logo{     
+        background-image: url("../img/logo.png");
+        @include  logo;
+        margin:9px 0;
+    }
+    &-links{
+        li+li{
+            margin-left: 32px;
+        }
+        a{
+            font-size:1.25rem;
+            color:$secondary;
+        }
+    }
+}
+.nav-db{
+    &-right{
+        align-items: center;
+    }
+    &-cart{
+        display: block;
+        position: relative;
+        color:$secondary;
+        .num{
+            font-size: 12px;
+            position: absolute;
+            padding: 0.5px 5px;
+            top:-40%;
+            right:-50%;
+
+        }
+    }
+    &-toggle{
+        font-size: 36px;
+        margin-left: 40px;
+    }
+    &-links{
+        z-index:1;
+        position: absolute;
+        background-color: #707070;
+        font-size: 1.25rem;
+        text-align:center;
+        width:100%;
+        top:100%;
+        left: 0;
+        padding-left: 0px;
+        display: none;
+        li{
+            padding:16px 0;
+        }
+        li+li{
+            border-top:1px solid white;
+        }
+        a{
+            color:white;
+        }
+    
+    }
+}
+
+
+
+
+
+
+
+.brand{
+    ul{
+        padding: 14px 0;
+        li+li{
+            margin-left: 28px;
+        }
+        a{
+            color: white;
+            font-size:1.25rem;
+        }
+    }
+
+}
+
+.footer{
+    &-banner{
+        background-image: url("../img/footer-banner.png");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    &-slogan{
+        font-size: 2rem;
+        margin-top: 312px;
+        margin-bottom: 1.25rem;
+        white-space: nowrap;
+    }
+    &-form{
+        margin-bottom: 112px;
+        input{
+            padding:18px 16px;
+        }
+        button{
+            width: 129px;
+        }
+
+    }
+
+
+    &-left{
+        display: flex;
+        align-items: center;
+        &-logo{
+            background-image: url("../img/logo-white.png");
+            @include logo;
+            margin:21px 0;
+        }
+        &-copyright{
+            margin-left: 20px;
+            font-size: 14px;
+        }
+    }
+    &-links{
+        align-items: center;
+        li+li{
+            margin-left: 36px;
+        }
+        a{
+            font-size:1.25rem;
+            color:white;
+        }
+    }
+}

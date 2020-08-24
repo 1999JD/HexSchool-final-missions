@@ -1,0 +1,95 @@
+@mixin pad{
+    @media(max-width: 768px){
+      @content;
+    }
+}
+
+@mixin mobile{
+    @media(max-width: 568px){
+        @content;
+    }
+}
+@mixin logo {
+    width: 128px;
+    height: 38px;
+    background-size: cover;
+    text-indent:101%;
+    white-space:nowrap;
+    overflow:hidden;
+}
+.discount{
+    text-decoration:line-through;
+}
+.fz-20px{
+    font-size: 20px;
+}
+
+.mt-mb{
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+}
+.mb-12px{
+    margin-bottom: 12px;
+}
+.mb-20px{
+    margin-bottom: 20px;
+}
+.mt-28px{
+    margin-top: 28px;
+}
+.mb-30px{
+    margin-bottom: 30px;
+}
+.mb-36px{
+    margin-bottom: 36px;
+}
+.mb-80px{
+    margin-bottom: 80px;
+}
+#add-cart,#add-favorite{
+    top:45%;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+
+.chinese{
+    &-light{
+        font-family: 'Noto Sans TC', sans-serif;
+        font-weight: 300;
+    }
+    &-regular{
+        font-family: 'Noto Sans TC', sans-serif;
+        font-weight: 400;
+    }
+
+    &-medium{
+        font-family: 'Noto Sans TC', sans-serif;
+        font-weight: 500;
+    }
+    &-bold{
+        font-family: 'Noto Sans TC', sans-serif;
+        font-weight: 700;
+    }
+}
+.english{
+    &-light{
+        font-weight: 300;
+    }
+    &-regualar{
+        font-weight: 400;
+    }
+    &-semibold{
+        font-weight: 600;
+    }
+    &-bold{
+        font-weight: 700;
+    }
+
+}
+
+
+
+$primary:#916000;
+$secondary:#8D8D8D;
+$secondary-dark:#818A91;

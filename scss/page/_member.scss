@@ -1,0 +1,81 @@
+.member-main{
+    margin-top: 80px;
+    margin-bottom: 60px;
+    color:$secondary-dark;
+    .link-list{
+        white-space: nowrap;
+        @include pad{
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+        li+li{
+            margin-top: 24px;
+            @include pad{
+                margin-top:0;
+            }
+        }
+        .this-link{
+            border-bottom:2px solid $primary;
+        }
+    }
+
+    hr{
+        margin:0 -16.6% 0 0;
+        @include pad{
+            margin:0;
+        }
+    }
+    label,.account{
+        white-space: nowrap;
+    }
+
+    form{
+        .form-gender-input{
+            padding-left: 15px;
+        }
+        input[type="checkbox"]{
+            width: 15px;
+            height: 15px;
+        }
+        .custom-checkbox .custom-control-input~.custom-control-label::before{
+            background-color:white;
+        }
+        .custom-checkbox .custom-control-input:checked~.custom-control-label::before{
+            background-color:$primary
+        }
+        
+        .col-md-8,.gender_input_control{
+            @media (max-width:992px) {
+                padding-left: 30px;             
+            }
+            @include pad{
+                padding-left: 15px;
+            }
+        }
+    }
+
+
+    
+
+    table{
+        width: 159px;
+        color:$secondary-dark;
+        th,td{
+            padding:0 0 1rem;
+        }
+    
+        th{
+            font-weight: normal;
+            padding-right: 15px;
+        }
+        td{
+            width: 59px;
+        }
+    }
+    .annotation{
+        display: block;
+        font-size: 13.7px;
+        margin-bottom: 40px;
+    }
+    
+}

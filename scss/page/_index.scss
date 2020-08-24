@@ -1,0 +1,110 @@
+.banner{
+    background-image: url("../img/banner.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    .ad_text{
+        margin: 295px 0;
+        padding-left: 30px;
+        padding-right: 0;
+        @include pad{
+            margin:101px 0 135px;
+            padding: 0 15px 0 15px;
+        }
+    }
+    p{
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    button{
+        background: transparent;
+        width: 79.68%;
+        border-radius: 30px;
+        color: white;
+        border:2px solid white;
+        font-size: 30px;
+        @include pad{
+            width:100%;
+        }
+    }
+}
+
+.main-top{
+    margin-top: 60px;
+    @include pad{
+        margin-top: 40px;
+    }
+    li+li{
+        margin-top: 52px;
+    }
+    button{
+        margin-top: 8px;
+        font-size: 1.25rem;
+        border-radius: 30px;
+        width: 100%;
+        background: transparent;
+        border:2px solid black;
+        padding-top:18px;
+        padding-bottom: 18px;   
+    }
+}
+.position-r{
+    padding-right:17%;
+    padding-left: 19.8%;
+    @include pad{
+        padding:8px 0 32px;
+    }
+}
+.position-l{
+    padding-right:19.8%;
+    padding-left: 17%;
+    @include pad{
+        padding:8px 0 32px;
+    }
+}
+
+.main-middle{
+    margin-top: 60px;
+    background-color: #E0E0E0;
+    padding:40px 0;
+    @include pad{
+        padding-bottom: 36px;
+        .card-deck{
+            align-items: center;
+        }
+        .card+.card{
+            margin-top: 24px;
+        }
+        img{
+            width: 344px;
+            height: 350px;
+        }
+    }
+    .soldOut{
+        position: relative;
+    }
+    .soldOut::after{
+        content: 'Sold Out';
+        position: absolute;
+        left:50%;
+        top:50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.5rem;
+        color:white;
+        font-weight: 600;
+        
+
+    }
+
+}
+.main-bottom{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    @include pad{
+        margin:40px auto;
+
+    }
+    .para-1{
+        font-size: 1.25rem;
+    }
+}
