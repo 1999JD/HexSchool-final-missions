@@ -1,8 +1,9 @@
+
 .switch{
     display: block;
     color: $shallow;
     background-color: $deep;
-    font-size: $font-s;
+    font-size: $font-1;
     border: 1px solid $shallow;
     width:50%;
     text-align: center;
@@ -26,7 +27,7 @@
         color: $shallow;
         width: 460px;
         background-color: $deep;
-        font-size: $font-s;
+        font-size: $font-1;
         &-container{
             margin: 30px 40px 0 40px;
         }
@@ -37,14 +38,14 @@
             width: 100%;
             margin-bottom: 30px;
             h2{
-            font-size: $font-ml;
+            font-size: $font-2l;
             }
             &-progressBar{
                 // margin-top: 130px;
                 display: flex;
                 max-width: 187px;
                 .my-circle{
-                    font-size: $font-s;
+                    font-size: $font-1;
                     position: relative;
                 }
                 .my-circle+.my-circle{
@@ -87,7 +88,7 @@
         &-submit{
             display: block;
             width: 100%;
-            font-size: $font-m;
+            font-size: $font-2;
             padding: 16px 0;
             text-align: center;
             background-color: $button-color;
@@ -108,7 +109,7 @@
  
             caption{
                 padding: 16px 0;
-                font-size: $font-m;
+                font-size: $font-2;
                 background-color: $shallow;
                 color: $middle;
                 font-weight: 900;
@@ -116,13 +117,13 @@
             tbody{
                 padding: 16px 20px;
                 background-color: white;
-                font-size: $font-xs;
+                font-size: $fontBasic;
                 line-height: 1;
                 font-weight: lighter;
             }
             tfoot{
                 background-color: white;
-                font-size: $font-s;
+                font-size: $font-1;
                 font-weight: bold;
                 padding: 0 20px 16px;
             }   
@@ -168,11 +169,11 @@
                 padding-left: 20px;
             }
             .name{
-                font-size: $font-xs;
+                font-size: $fontBasic;
                 padding-top: 16px;
             }
             .price{
-                font-size: $font-s;
+                font-size: $font-1;
                 padding-bottom: 12px;
                 
             }

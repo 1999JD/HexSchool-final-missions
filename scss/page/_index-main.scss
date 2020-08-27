@@ -17,7 +17,7 @@
 
 .menu{
     width: 32%;
-    font-size: $font-m;
+    font-size: $font-2;
     text-align: center;
     line-height: 40px;
     &-title{
@@ -58,7 +58,7 @@
             left:20px;
             background-color:$deep ;
             color:white;
-            font-size: $font-xs;
+            font-size: $fontBasic;
             letter-spacing: 5px;
             padding:10px;
         }
@@ -73,7 +73,7 @@
             display: flex;
             &-name,&-price{
                 border: 1px solid $shallow;
-                font-size: $font-s;
+                font-size: $font-1;
                 text-align: center;
                 padding:13px 0;
                 width: 50%;
@@ -89,7 +89,7 @@
             display: block;
             padding:16px 0;
             background-color: $shallow;
-            font-size: $font-m;
+            font-size: $font-2;
             flex-basis: 300px;
             text-align: center;
             border: 1px solid $shallow;
@@ -105,7 +105,7 @@
         margin-left: auto;
         display: flex;
         border:1px solid $shallow;
-        font-size: $font-s;
+        font-size: $font-1;
         li+li{
             border-left: 1px solid $shallow;
         }
