@@ -17,12 +17,17 @@ li{
 ul{
     margin: 0;
 }
+a{
+    display: block;
+}
+
+
+
 
 .card{
     background-color: transparent;
     border:0;
 }
-
 .nav{
     position: relative;
     &-logo{     
@@ -54,7 +59,6 @@ ul{
             padding: 0.5px 5px;
             top:-40%;
             right:-50%;
-
         }
     }
     &-toggle{
@@ -81,15 +85,8 @@ ul{
         a{
             color:white;
         }
-    
     }
 }
-
-
-
-
-
-
 
 .brand{
     ul{
@@ -102,8 +99,9 @@ ul{
             font-size:1.25rem;
         }
     }
-
 }
+
+
 
 .footer{
     &-banner{
@@ -126,10 +124,7 @@ ul{
         button{
             width: 129px;
         }
-
     }
-
-
     &-left{
         display: flex;
         align-items: center;

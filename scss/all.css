@@ -11308,15 +11308,16 @@ ul {
 }
 
 .banner .ad_text {
-  margin: 295px 0;
+  margin-top: 295px;
+  margin-bottom: 295px;
   padding-left: 30px;
   padding-right: 0;
 }
 
 @media (max-width: 768px) {
   .banner .ad_text {
-    margin: 101px 0 135px;
-    padding: 0 15px 0 15px;
+    margin-top: 101px;
+    margin-bottom: 135px;
   }
 }
 
@@ -11340,21 +11341,21 @@ ul {
   }
 }
 
-.main-top {
+.index-productIntro {
   margin-top: 60px;
 }
 
 @media (max-width: 768px) {
-  .main-top {
+  .index-productIntro {
     margin-top: 40px;
   }
 }
 
-.main-top li + li {
+.index-productIntro .info li + li {
   margin-top: 52px;
 }
 
-.main-top button {
+.index-productIntro button {
   margin-top: 8px;
   font-size: 1.25rem;
   border-radius: 30px;
@@ -11387,35 +11388,35 @@ ul {
   }
 }
 
-.main-middle {
+.index-productWindow {
   margin-top: 60px;
   background-color: #E0E0E0;
   padding: 40px 0;
 }
 
 @media (max-width: 768px) {
-  .main-middle {
+  .index-productWindow {
     padding-bottom: 36px;
   }
-  .main-middle .card-deck {
+  .index-productWindow .card-deck {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
-  .main-middle .card + .card {
+  .index-productWindow .card + .card {
     margin-top: 24px;
   }
-  .main-middle img {
+  .index-productWindow img {
     width: 344px;
     height: 350px;
   }
 }
 
-.main-middle .soldOut {
+.index-productWindow .soldOut {
   position: relative;
 }
 
-.main-middle .soldOut::after {
+.index-productWindow .soldOut::after {
   content: 'Sold Out';
   position: absolute;
   left: 50%;
@@ -11427,18 +11428,18 @@ ul {
   font-weight: 600;
 }
 
-.main-bottom {
+.index-bottleIntro {
   margin-top: 60px;
   margin-bottom: 60px;
 }
 
 @media (max-width: 768px) {
-  .main-bottom {
+  .index-bottleIntro {
     margin: 40px auto;
   }
 }
 
-.main-bottom .para-1 {
+.index-bottleIntro .para-1 {
   font-size: 1.25rem;
 }
 
@@ -11551,7 +11552,7 @@ ul {
   }
 }
 
-.login-main-right {
+.login-main-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11565,7 +11566,7 @@ ul {
 }
 
 @media (max-width: 768px) {
-  .login-main-right {
+  .login-main-form {
     margin-top: 28px;
   }
 }
@@ -11600,6 +11601,14 @@ ul {
   margin-top: 80px;
   margin-bottom: 60px;
   color: #818A91;
+}
+
+.member-main h2 {
+  font-size: 20px;
+}
+
+.member-main h3 {
+  font-size: 16px;
 }
 
 .member-main .link-list {

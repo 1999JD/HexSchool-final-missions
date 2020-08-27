@@ -2,6 +2,12 @@
     margin-top: 80px;
     margin-bottom: 60px;
     color:$secondary-dark;
+    h2{
+        font-size:1.25rem
+    }
+    h3{
+        font-size:1rem;
+    }
     .link-list{
         white-space: nowrap;
         @include pad{
@@ -53,9 +59,6 @@
             }
         }
     }
-
-
-    
 
     table{
         width: 159px;
