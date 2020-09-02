@@ -306,9 +306,21 @@
 
 <script>
   var navSwitch =false;
+  var wdth=768;
+
+  $(document).ready(function(){
+    $(window).resize(function() {
+      wdth=$(window).width();
+      if (wdth>768){
+        $('.nav-db-links').slideUp();
+        navSwitch=false;
+      }
+    });
+  });
+
   $('.nav-db-toggle').click(
     function(){
-      if(navSwitch==false){
+      if(navSwitch==false && wdth<=768){
         $('.nav-db-links').slideDown();
         navSwitch=true;
       }
@@ -319,7 +331,6 @@
     }
   );
 </script>
-
 
 
 
