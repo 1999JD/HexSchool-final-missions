@@ -1,0 +1,197 @@
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 300;
+}
+.wrap{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.container{
+    padding: 0 15px;
+}
+.header-top{
+   background-color: #f6f6f6;
+   justify-content: flex-end;
+   padding: 5px 10px;
+}
+.header-top>ul>li:first-child>a{
+    color: #4460a0;
+}
+.header-top>ul>li:last-child>a{
+    color: #00aaec;
+}
+
+.header-top>ul>li+li{
+    margin-left: 10px;
+}
+.header-top>ul>li+li::before{
+    content: "|";
+    transform: translateX(-5px) translateY(-2px);
+}
+.header-bottom{
+    align-items: center;
+    padding-left: 20px;
+}
+.header-bottom>h1>a{
+    background:url("https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/logo.png");
+    background-position: -15px ;
+    background-size: cover;
+    padding: 7px 0;
+}
+.header-bottom>ul>li>a{
+    padding: 17px 20px;
+    color:#00cc99;
+}
+.header-bottom>ul>li>a:hover{
+    border-bottom: 3px solid #0c9;
+}
+.banner{
+    background: url("https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/banner.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid transparent;
+}
+.banner-text{
+    color: white;
+    font-size: 36px;
+    background: -webkit-linear-gradient(left , rgb(29,29,29) , rgba(29,29,29,.1));
+    line-height: 1.2;
+    padding: 35px 20px;
+    margin: 94px 0;
+}
+.card-group{
+    justify-content: space-evenly;
+    margin-top: 65px;
+}
+.card{
+    width: 30%;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    line-height: 1.5;
+    box-shadow: 0 1px 3px #B4B3B0;
+}
+.alignImg{
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 135px;
+    margin-bottom: 15px;
+}
+.card>h3{
+    font-size: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.card>ul{
+    list-style-type: disc;
+    padding-left: 20px;
+}
+.tableBlock{
+    margin-top: 60px;
+}
+.tableBlock>h2{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 24px;
+    font-weight: bold;
+}
+.tableBlock>table{
+    width: 85%;
+    margin: 0 auto;
+    line-height: 35px;
+}
+tr{
+    border-bottom: 1px solid #ddd;
+}
+tr:first-child{
+    border-top: 1px solid #ddd;
+}
+th,td{
+    padding-left: 20px;
+}
+th{
+    text-align: left;
+    background-color: #f7f7f7;
+    font-weight: bold;
+}
+.formBlock{
+    margin-top: 60px;
+    padding: 30px 18px ;
+    background:-webkit-linear-gradient(#00644b , #009872);
+    color: white;
+}
+.formBlock>p{
+    text-align: center;
+    font-size: 30px;
+    margin: 40px 0 36px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+.personalInfo{
+    flex-direction: column;
+    width: 50%;
+    margin-left: 38px;
+}
+input{
+    border-radius: 5px;
+}
+label{
+    line-height: 1.25;
+}
+.personalInfo>input{
+    width:100%;
+    box-sizing: border-box;
+    font-size: 20px;
+    padding: 6px 12px;
+
+}
+.personalInfo>input + label{
+    margin-top: 15px;
+}
+input[type="textarea"]{
+    width: 50%;
+}
+input[type="submit"]{
+    width: 20%;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: auto ;
+    padding: 6px 12px;
+    background-color: #00cc99;
+    color:white;
+}
+.footer{
+    margin-top: 30px;
+    margin-bottom: 60px;
+    padding: 0 20px;
+}
+.footer-logo{
+    background: url("https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/footerLogo.png");
+    background-size: contain;
+}
+.footer-info{
+    line-height: 1.5;
+}
+.d-flex{
+    display: flex;
+}
+.jcsb{
+    justify-content: space-between;
+}
+.logoSet{
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 36px;
+}
+.point{
+    color:#0c9
+}
+.contactWay{
+    color:rgba(255,45,128)
+}
