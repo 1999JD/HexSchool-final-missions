@@ -35,6 +35,8 @@ body{
 .header-bottom>h1>a{
     background:url("https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/logo.png");
     background-position: -15px ;
+    background-repeat: no-repeat;
+
     background-size: cover;
     padding: 7px 0;
 }
@@ -168,9 +170,11 @@ input[type="submit"]{
     margin-bottom: 60px;
     padding: 0 20px;
 }
-.footer-logo{
+.footer-logo> a{
     background: url("https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/footerLogo.png");
     background-size: contain;
+    background-repeat: no-repeat;
+
 }
 .footer-info{
     line-height: 1.5;
@@ -185,7 +189,6 @@ input[type="submit"]{
     text-indent: 101%;
     overflow: hidden;
     white-space: nowrap;
-    background-repeat: no-repeat;
     width: 200px;
     height: 36px;
 }
