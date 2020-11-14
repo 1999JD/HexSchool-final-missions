@@ -2,6 +2,7 @@ body{
     font-family: 'Noto Sans TC', sans-serif;
     font-weight: 300;
 }
+
 .wrap{
     max-width: 1000px;
     margin: 0 auto;
@@ -53,6 +54,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     border: 1px solid transparent;
+    margin-bottom: 65px;
 }
 .banner-text{
     color: white;
@@ -64,7 +66,7 @@ body{
 }
 .card-group{
     justify-content: space-evenly;
-    margin-top: 65px;
+    margin-bottom: 60px;
 }
 .card{
     width: 30%;
@@ -92,7 +94,7 @@ body{
     padding-left: 20px;
 }
 .tableBlock{
-    margin-top: 60px;
+    margin-bottom: 60px;
 }
 .tableBlock>h2{
     text-align: center;
@@ -120,10 +122,10 @@ th{
     font-weight: bold;
 }
 .formBlock{
-    margin-top: 60px;
     padding: 30px 18px ;
     background:-webkit-linear-gradient(#00644b , #009872);
     color: white;
+    margin-bottom: 30px;
 }
 .formBlock>p{
     text-align: center;
@@ -166,7 +168,6 @@ input[type="submit"]{
     color:white;
 }
 .footer{
-    margin-top: 30px;
     margin-bottom: 60px;
     padding: 0 20px;
 }
@@ -174,7 +175,6 @@ input[type="submit"]{
     background: url("https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/footerLogo.png");
     background-size: contain;
     background-repeat: no-repeat;
-
 }
 .footer-info{
     line-height: 1.5;
