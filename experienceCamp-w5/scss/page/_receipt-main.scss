@@ -1,0 +1,189 @@
+
+.switch{
+    display: block;
+    color: $shallow;
+    background-color: $deep;
+    font-size: $font-1;
+    border: 1px solid $shallow;
+    width:50%;
+    text-align: center;
+    padding:14px 0;
+}
+.active{
+    color: $deep;
+    background-color: $shallow;
+}
+
+
+.receipt-main{
+    max-width: 780px;
+    margin: 60px auto 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+
+    .form{
+        color: $shallow;
+        width: 460px;
+        background-color: $deep;
+        font-size: $font-1;
+        &-container{
+            margin: 30px 40px 0 40px;
+        }
+        &-info{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 30px;
+            h2{
+            font-size: $font-2l;
+            }
+            &-progressBar{
+                // margin-top: 130px;
+                display: flex;
+                max-width: 187px;
+                .my-circle{
+                    font-size: $font-1;
+                    position: relative;
+                }
+                .my-circle+.my-circle{
+                    margin-left: 65px;
+                }
+                .my-circle+.my-circle::before{
+                    content: '';
+                    position: absolute;
+                    height: 1px;
+                    width: 65px;
+                    background-color: $shallow;
+                    top:0;
+                    bottom: 0;
+                    margin:auto;
+                    left:-65px;
+                }
+            }
+
+        }
+        &-chooseDeliveryWay{
+            width: 100%;
+            display: flex;
+            margin-bottom: 30px;
+
+        }
+        &-input{
+            display: flex;
+            flex-direction: column;
+            label{
+                margin-bottom: 8px;
+            }
+            input{
+                line-height: 56px;
+                margin-bottom: 16px;
+                padding-left: 20px;
+                background-color:$shallow;
+                color:$middle;
+            }
+        }
+        &-submit{
+            display: block;
+            width: 100%;
+            font-size: $font-2;
+            padding: 16px 0;
+            text-align: center;
+            background-color: $button-color;
+            color:$deep;
+            margin-top: 14px;
+            font-weight: 900;
+        }
+    }
+    .order{
+        width: 300px;
+        margin-left: 20px;
+        table{
+            color:$middle;
+            border:1px solid $shallow;
+            tbody,tfoot{
+                display: block;
+            }
+ 
+            caption{
+                padding: 16px 0;
+                font-size: $font-2;
+                background-color: $shallow;
+                color: $middle;
+                font-weight: 900;
+            }
+            tbody{
+                padding: 16px 20px;
+                background-color: white;
+                font-size: $fontBasic;
+                line-height: 1;
+                font-weight: lighter;
+            }
+            tfoot{
+                background-color: white;
+                font-size: $font-1;
+                font-weight: bold;
+                padding: 0 20px 16px;
+            }   
+        }
+        table+table{
+            margin-top: 20px;
+        }
+        &-sum{
+            tr{
+                display: block;
+            }
+            tr+tr{
+                padding-top: 8px;
+            }
+            td:last-child{
+                text-align: right;
+            }
+            td{
+                width: 130px;
+            }
+        }
+        &-list{
+            
+            .order-item{
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                width: 120px;
+                height: 80px;
+            }
+            .order-1{
+                background-image: url("../img/order-1.jpg");
+            }
+            .order-2{
+                background-image: url("../img/order-2.jpg");
+            }
+            .order-3{
+                background-image: url("../img/order-3.jpg");
+            }
+            .name,.price{
+                width: 142.7px;
+                box-sizing: border-box;
+                padding-left: 20px;
+            }
+            .name{
+                font-size: $fontBasic;
+                padding-top: 16px;
+            }
+            .price{
+                font-size: $font-1;
+                padding-bottom: 12px;
+                
+            }
+            .space{
+                display: block;
+                height: 20px;
+            }
+        }
+
+
+    }
+
+}

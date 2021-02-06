@@ -1,0 +1,238 @@
+body{
+    font-family: PingFangTC-Light, sans-serif;
+    font-weight: bolder ;
+    color:$deep;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+a{
+    display: block;
+    text-decoration: none;
+    color:$deep;
+
+}
+button{
+    border: none;
+    background: transparent;
+}
+body {
+    line-height: 1.5;
+}
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+}
+
+
+.container{
+    margin: 0 auto;
+    max-width: 940px;
+}
+.ham,.cart{
+    display: none;
+}
+.nav-links-ul{
+    max-height: 0;
+}
+.active{
+    max-height: 200px; 
+    z-index: 1;
+}
+@include pad(){
+    .ham,.cart{
+        display: block;
+    }
+}
+
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 30px;
+    &-logo{
+        background-size: 180px 40px;
+        background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/a3ed9441c2522e2b8edb35a9847121eb3e6af16e/student-week1/logo-all-dark.svg");
+        white-space: nowrap;
+        text-indent:101%;
+        overflow: hidden;
+        line-height: 40px;
+        width: 180px;
+    }
+    &-links{
+        display: flex;
+        align-items: center;
+        ul{
+            display: flex;
+            align-items: center;
+            a{
+                font-size:$fontBasic;
+                line-height: 22px;
+                padding:3px;
+                margin-left: 30px;
+            }
+        }
+    }
+    @include pad(){
+        justify-content: space-around;
+        &-links-ul{
+            position: absolute;
+            left:0;
+            top:100%;
+            width: 100%;
+            background: white;
+            flex-direction: column;
+            overflow: hidden;
+            text-align: center;
+            li{
+                margin:0 ;
+                width: 100%;
+                padding:10px 0;
+            }
+            li:hover{
+                background-color: $shallow;
+            }
+            li:last-child{
+                display: none; 
+            }
+            a{
+                padding:0;
+            }
+        }
+    }
+}
+
+.registered-container{
+    background-color: $deep;
+}
+.registered{
+    max-width: 780px;
+    margin:0 auto;
+    padding: 30px 0;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+
+    &-label{
+        display: flex;
+        align-items: center;
+        width: 280px;
+        &-logo{
+            padding-right: 20px;
+            max-width: 40px;
+            display: inline-block;
+        }
+        &-h{
+            color:$shallow;
+            font-size: $font-2;
+            line-height: 29px;
+            font-weight: 500;
+        }
+    }
+    &-input{
+        display: flex;
+        position: relative;
+        outline: none;
+        vertical-align: middle;
+        &-mailIcon{
+            position: absolute;
+            top:16px;
+            left:20px;
+        }
+        &-text{
+            box-sizing: border-box;
+            padding-left: 45px;
+            max-width: 315px;
+            border: 0;
+        }
+        &-submit{
+            background-color: $button-color;
+            padding: 20px 24px;   
+            border: 0;
+        }
+        &-submit img{
+            max-width: 16px;
+        }
+    }
+    @include pad(){
+        flex-direction: column;
+        &-label{
+            margin-bottom: 30px;
+        }
+    }
+}
+
+
+
+
+
+.footer{
+    background-color: $shallow;
+    &-container{
+        max-width: 780px;
+        margin:0 auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 0;
+    }
+    &-left{
+        &-logo{
+            max-width: 171px;
+            margin-bottom: 115px;
+        }
+        &-bottom{ 
+            &-contactMethod{
+            font-size: $fontBasic;
+            line-height: 24px;
+            margin-bottom: 37px;
+            font-weight: 500;
+            }
+            &-socialMedia{
+                display: flex;
+                a{
+                    display: block;
+                    width: 32px;
+                }
+                a+a{
+                    margin-left: 8px;
+                }
+            }
+        }
+    }
+    &-right{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+        &-slogan{
+            writing-mode: vertical-rl;
+            font-size: $font-2;
+            line-height: 30px;
+            font-weight: bolder;
+        }
+    }
+    @include pad(){
+        &-container{
+            flex-direction: column;
+            margin-left: 30px;
+        }
+        &-right{
+            display: block;
+            &-slogan{
+                display: none;
+            }
+        }
+        &-left {
+            &-logo{        
+                margin-bottom: 40px;
+            }
+            &-socialMedia{
+                margin-bottom: 23px;
+            }
+        }
+    }
+}
+
+
