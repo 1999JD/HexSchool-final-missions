@@ -1,0 +1,29 @@
+@mixin pad{
+    @media(max-width: 768px){
+      @content;
+    }
+}
+
+@mixin mobile{
+    @media(max-width: 568px){
+        @content;
+    }
+}
+@mixin bgImage{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+@mixin logo {
+    width: 128px;
+    height: 38px;
+    background-size: cover;
+    text-indent:101%;
+    white-space:nowrap;
+    overflow:hidden;
+}
+
+$primary:#916000;
+$secondary-light:#E0E0E0;
+$secondary:#8D8D8D;
+$secondary-dark:#818A91;

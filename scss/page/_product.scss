@@ -1,0 +1,47 @@
+.product-main{
+    margin-top: 80px;
+    @include pad{
+        margin-top: 40px;
+    }
+    .card{
+        margin-bottom: 60px;
+        @include pad{
+            margin-bottom: 32px;
+        }
+
+        .fas{
+            color: $primary;
+        }
+        .fas+.fas{
+            margin-left:10.5px;
+        }
+        p{
+            margin-bottom: 0;
+        }
+    }
+
+
+    .myPagination{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 60px;
+        padding-left: 0;
+        @include pad{
+            margin-top:16px;
+            margin-bottom: 40px;
+        }
+        .this-page{
+            color:$primary;
+            text-decoration: underline;
+        }
+        a{
+            display: block;
+            font-size: 1.25rem;
+        }
+        li+li{
+            margin-left: 20px;
+        }
+    }
+
+}

@@ -1,0 +1,80 @@
+.banner{
+    background-image: url("../img/banner.png");
+    @include bgImg;
+    .ad_text{
+        margin-top: 295px ;
+        margin-bottom:295px;
+        @include pad{
+            margin-top:101px;
+            margin-bottom:135px;
+        }
+    }
+    button{
+        background: transparent;
+        width: 79.68%;
+        border-radius: 30px;
+        color: white;
+        border:2px solid white;
+        font-size: 30px;
+        @include pad{
+            width:100%;
+        }
+    }
+}
+
+.index-productIntro{
+    margin-top: 60px;
+    @include pad{
+        margin-top: 40px;
+    }
+    .info{
+        li+li{
+            margin-top: 52px;
+        }
+    }
+    button{
+        margin-top: 8px;
+        font-size: 1.25rem;
+        border-radius: 30px;
+        width: 100%;
+        background: transparent;
+        border:2px solid black;
+        padding-top:18px;
+        padding-bottom: 18px;   
+    }
+}
+.index-productWindow{
+    margin-top: 60px;
+    background-color: $secondary-light;
+    padding:40px 0;
+    @include pad{
+        padding-bottom: 36px;
+        .card+.card{
+            margin-top: 24px;
+        }
+        img{
+            width: 344px;
+            height: 350px;
+        }
+    }
+    .soldOut{
+        position: relative;
+    }
+    .soldOut::after{
+        content: 'Sold Out';
+        position: absolute;
+        left:50%;
+        top:50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.5rem;
+        color:white;
+        font-weight: 600;
+    }
+
+}
+.index-bottleIntro{
+    margin:60px auto;
+    @include pad{
+        margin:40px auto;
+    }
+}
