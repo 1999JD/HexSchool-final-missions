@@ -1,0 +1,258 @@
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 300;
+}
+
+.wrap{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+#top{
+    position: fixed;
+    font-size: 100px;
+    bottom: 5%;
+    right:5%;
+    color:#00644b
+}
+#top:hover{
+    cursor: pointer;
+    color:#00cc99
+
+}
+.container{
+    padding: 0 15px;
+}
+.header-top{
+   background-color: #f6f6f6;
+   justify-content: flex-end;
+   padding: 5px 10px;
+}
+.header-top>li:first-child>a{
+    color: #4460a0;
+}
+.header-top>li:last-child>a{
+    color: #00aaec;
+}
+.header-top>li:first-child>a:hover{
+    color: black;
+}
+.header-top>li:last-child>a:hover{
+    color: black;
+}
+
+.header-top>li+li{
+    margin-left: 10px;
+}
+.header-top>li+li::before{
+    content: "|";
+    transform: translateX(-5px) translateY(-2px);
+}
+.header-bottom{
+    align-items: center;
+    padding-left: 20px;
+}
+.header-bottom>h1>a{
+    background:url("https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/logo.png");
+    background-position: -15px ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 7px 0 4px;
+}
+.header-bottom>ul>li>a{
+    padding: 17px 20px;
+    color:#00cc99;
+    border-bottom: 3px solid transparent;
+}
+.header-bottom>ul>li>a:hover{
+    border-bottom: 3px solid #0c9;
+}
+.header-bottom >ul>li{
+    position: relative;
+}
+.dropdown-open{
+    position: absolute;
+    z-index: 2;
+    background: white;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+.dropdown-open a{
+    padding: 8px;
+    cursor: pointer;
+    color:#00cc99;
+}
+.dropdown-open a:hover{
+    padding: 8px;
+    cursor: pointer;
+    background-color: #00644b;
+}
+
+.banner{
+    background: url("https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/banner.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 345px;
+    position: relative;
+}
+.banner-text{
+    display: block;
+    color: white;
+    font-size: 36px;
+    background: -webkit-linear-gradient(left , rgb(29,29,29) , rgba(29,29,29,.1));
+    line-height: 1.2;
+    padding: 35px 20px;
+    position: absolute;
+    top:97px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.card-group{
+    justify-content: space-evenly;
+    margin-bottom: 60px;
+}
+.card{
+    width: 30%;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    line-height: 1.5;
+    box-shadow: 0 1px 3px #B4B3B0;
+}
+.alignImg{
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 135px;
+    margin-bottom: 15px;
+}
+.card>h3{
+    font-size: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.card>ul{
+    list-style-type: disc;
+    padding-left: 20px;
+}
+.tableBlock{
+    margin-bottom: 60px;
+}
+.tableBlock h2{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 24px;
+    font-weight: bold;
+}
+.tableBlock table{
+    width: 85%;
+    margin: 0 auto;
+    line-height: 35px;
+}
+.tableBlock tr{
+    border-bottom: 1px solid #ddd;
+}
+.tableBlock tr:first-child{
+    border-top: 1px solid #ddd;
+}
+.tableBlock th,td{
+    padding-left: 20px;
+}
+.tableBlock th{
+    text-align: left;
+    background-color: #f7f7f7;
+    font-weight: bold;
+}
+.formBlock{
+    padding: 30px 18px ;
+    background:-webkit-linear-gradient(#00644b , #009872);
+    color: white;
+    margin-bottom: 30px;
+}
+.formBlock>p{
+    text-align: center;
+    font-size: 30px;
+    margin: 40px 0 36px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+.personalInfo{
+    flex-direction: column;
+    width: 50%;
+    margin-left: 38px;
+}
+.formBlock input{
+    border-radius: 5px;
+}
+.formBlock label{
+    line-height: 1.25;
+}
+.personalInfo input{
+    width:100%;
+    box-sizing: border-box;
+    font-size: 20px;
+    padding: 6px 12px;
+}
+.formBlock  input + label{
+    margin-top: 15px;
+}
+.formBlock textarea{
+    width: 50%;
+}
+.formBlock input[type="submit"]{
+    width: 20%;
+    font-size: 20px;
+    margin-top: 15px;
+    align-self: flex-end;
+    padding: 6px 12px;
+    background-color: #00cc99;
+    color:white;
+    cursor: pointer
+}
+.formBlock input[type="submit"]:hover{
+    color: #00cc99;
+    background-color: white;
+
+}
+.footer{
+    margin-bottom: 60px;
+    padding: 0 20px;
+}
+.footer-logo> a{
+    background: url("https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/footerLogo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.footer-info{
+    line-height: 1.5;
+}
+.d-flex{
+    display: flex;
+}
+.jcsb{
+    justify-content: space-between;
+}
+.logoSet{
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 200px;
+    height: 36px;
+}
+.point{
+    color:#0c9
+}
+.contactWay{
+    color:rgba(255,45,128)
+}
+.contactWay:hover{
+    color:black
+}
+.swiper-container{
+    height: 345px;
+    margin-bottom: 65px;
+
+
+}
